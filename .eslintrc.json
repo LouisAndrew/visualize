@@ -6,24 +6,47 @@
     "prettier",
     "plugin:tailwindcss/recommended"
   ],
-  "plugins": ["tailwindcss"],
+  "plugins": [
+    "tailwindcss",
+    "prefer-arrow",
+    "prettier",
+    "simple-import-sort"
+  ],
   "rules": {
     "@next/next/no-html-link-for-pages": "off",
     "react/jsx-key": "off",
-    "tailwindcss/no-custom-classname": "off"
+    "tailwindcss/no-custom-classname": "off",
+    "prefer-arrow/prefer-arrow-functions": [
+      "error",
+      {
+        "disallowPrototype": true,
+        "singleReturnOnly": false,
+        "classPropertiesAllowed": false
+      }
+    ],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "prettier/prettier": "error"
   },
   "settings": {
     "tailwindcss": {
-      "callees": ["cn"],
+      "callees": [
+        "cn"
+      ],
       "config": "tailwind.config.js"
     },
     "next": {
-      "rootDir": ["./"]
+      "rootDir": [
+        "./"
+      ]
     }
   },
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx"],
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
       "parser": "@typescript-eslint/parser"
     }
   ]
