@@ -1,7 +1,11 @@
 import {
+  ArrowUp,
+  ArrowUpDown,
   type Icon as LucideIcon,
   LucideProps,
   Moon,
+  Shuffle,
+  StopCircle,
   SunMedium,
   Twitter,
 } from "lucide-react";
@@ -9,6 +13,10 @@ import {
 export type Icon = LucideIcon;
 
 export const Icons = {
+  ArrowUp,
+  Shuffle,
+  ArrowUpDown,
+  StopCircle,
   sun: SunMedium,
   moon: Moon,
   twitter: Twitter,
