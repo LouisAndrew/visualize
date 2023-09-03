@@ -49,11 +49,11 @@ export const useSort = <T extends ArrayItem>(
 
   const sort = async () => {
     setSortState(SORT_STATE.STARTED);
-    await new Promise((resolve) => setTimeout(resolve, timeout / 3));
 
     try {
       await algorithm(state, breakpoint);
     } catch {
+      // noop
     } finally {
       setSortState(SORT_STATE.NONE);
       resetStates();

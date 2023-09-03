@@ -1,7 +1,7 @@
 "use client";
 
 import Color from "color";
-import { useState } from "react";
+import { type FC, useState } from "react";
 import { v4 } from "uuid";
 
 import { SORT_STATE, useSort } from "@/hooks/useSort";
@@ -20,7 +20,7 @@ export interface Props {
   length: number;
 }
 
-export const List: React.FC<Props> = ({ length }) => {
+export const List: FC<Props> = ({ length }) => {
   const [items, setItems] = useState(
     arrayOfLength(length).map((value) => ({ value: value + 1, key: v4() })),
   );
