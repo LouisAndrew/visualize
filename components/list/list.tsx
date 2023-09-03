@@ -50,7 +50,7 @@ export const List: React.FC<Props> = ({ length }) => {
           </Button>
         ) : (
           <Button className="gap-x-2" onClick={sort}>
-            <Icons.SortAsc size={14} />
+            <Icons.ArrowUpDown size={14} />
             Sort
           </Button>
         )}

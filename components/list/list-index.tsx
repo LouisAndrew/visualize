@@ -1,6 +1,6 @@
 import type Color from "color";
 import { motion } from "framer-motion";
-import { FC } from "react";
+import type { FC } from "react";
 
 import { Icons } from "../icons";
 

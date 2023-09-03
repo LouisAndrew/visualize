@@ -15,7 +15,7 @@ export type Icon = LucideIcon;
 export const Icons = {
   ArrowUp,
   Shuffle,
-  SortAsc: ArrowUpDown,
+  ArrowUpDown,
   StopCircle,
   sun: SunMedium,
   moon: Moon,
