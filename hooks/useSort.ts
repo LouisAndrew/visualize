@@ -62,6 +62,7 @@ export const useSort = <T extends ArrayItem>(
 
   const stopSorting = () => {
     if (sortState !== SORT_STATE.TERMINATED) {
+      eventBus.emit(EVENTS.TERMINATE_SORT);
       setSortState(SORT_STATE.TERMINATED);
     }
   };
